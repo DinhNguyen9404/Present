@@ -1,0 +1,173 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Images/Background8.png);
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.intro{
+    width: 40%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(42, 36, 208), 30%, rgb(188, 46, 86));
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(145, 191, 134);
+}
+
+.intro h1{
+    font-style: italic;
+    color: rgb(224, 149, 36);
+}
+
+/* Street view */
+#street-view {
+    height: 700px;
+    width: 1000px;
+    margin-left: 40%;
+    margin-top: 50px;
+    filter: invert(0);
+    z-index: 1;
+}
+
+.gm-iv-address {
+    display: none;
+}
+
+.block{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+}  
+
+.answer{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    border: 1px solid white;
+    width: 360px;
+    height: 360px;
+    background-color: rgb(184, 188, 243);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    font-size: 1rem;
+}
+
+.answer button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(97, 168, 49);
+    color: white;
+}
+
+.next{
+    display: none;
+}
+
+.next:hover{
+    color: blue;
+}
+
+.input{
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.result{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.4rem;
+    color: green;
+}
+
+
+
+
+
+
+
+/* Continue */
+.continue-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background: radial-gradient(purple, cyan);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.continue h3{
+    color: rgb(198, 143, 25);
+}
+
+.continue div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.continue button:hover{
+    background-color: rgb(220, 233, 43);
+}
+
+@media screen and (max-width: 1300px) {
+    body *{
+        display: none;
+    }
+
+}

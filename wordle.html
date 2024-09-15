@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/wordle.css">
+    <title>Chapter 3: Wordle</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Chapter 3: Wordle</h1>
+        <h3>Nhập các chữ để tạo thành 1 từ tiếng anh có nghĩa với số lần giới hạn (Backspace để xóa, Enter để xác nhận)</h3>
+        <h3>Chữ hiện nền xanh là đúng, vàng vẫn đúng nhưng sai vị trí. Nền đen là sai</h3>
+    </div>
+
+    <div id="game">
+        <div class="buttons">
+            <div class="result"></div>
+            <button class="reset">Chơi lại</button>
+            <button class="next">Tiếp theo</button>
+            <div class="score">0/3</div>
+        </div>
+    </div>
+
+    <div class="continue-container">
+        <div class="continue">
+            <div>
+                <h2>Cũng ghê đấy</h2>
+                <h3>Key nè: 1890-1969</h3>
+                <button>
+                    <a href="menu.html">Trở về menu</a>
+                </button>
+                <button>
+                    <a href="fill.html">Thử thách kế tiếp</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/wordle.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 6: Word Scramble</title>
+    <link rel="stylesheet" href="style/wordscramble.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/wordscrambleWords.js" defer></script>
+    <script src="script/wordscramble.js" defer></script>
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Chapter 6: Word Scramble</h1>   
+      <h2>Sắp xếp các chữ cái được cho để tạo thành một từ có nghĩa</h2>
+      <h2>Nếu khó thì có thể dùng gợi ý, nhưng nên cân nhắc vì chỉ có 3 lượt dùng</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="startArea" onclick="start()"><button class="startBtn">Bắt đầu trò chơi</button></div>
+
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Gợi ý: <span>Place containing collection of books</span></p>
+                <p class="time">Thời gian còn lại: <span><b>40s</b></span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Nhập đáp án">
+            <div class="result">
+              <button class="hintBtn">Gợi ý</button>
+              <button class="check-word">Check đáp án</button>
+              <div class="score-area"><span>Điểm: </span><span class="score">0/8</span></div>
+            </div>
+            <div class="review"></div>
+            <button class="next">Tiếp tục</button>
+        </div>
+    </div>
+
+    <div class="continue-container">
+      <div class="continue">
+          <div>
+              <h2>Cái này chưa là gì</h2>
+              <h3>Here you are: aaaaaaaa</h3>
+              <button>
+                  <a href="index.html">Trở về menu</a>
+              </button>
+              <button>
+                  <a href="maze.html">Trò kế tiếp</a>
+              </button>
+          </div>
+      </div>
+  </div>
+  
+  <div class="failed-container">
+      <div class="failed">
+          <div>
+              <h2>You Failed</h2>
+              <h3>Chấp nhận bỏ cuộc?</h3>
+              <button class="restart">
+                  Thử lại
+              </button>
+              <button>
+                  <a href="index.html">Trở về menu</a>
+              </button>
+          </div>
+      </div>
+  </div>
+
+    
+  </body>
+</html>

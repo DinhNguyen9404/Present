@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 7: Maze</title>
+  <link rel="stylesheet" href="style/maze.css">
+</head>
+<body>
+
+  <div class="intro">
+    <h1>Chapter 7: Giải mã mê cung</h1>
+    <h2>Dùng các phím mũi tên để di chuyển</h2>
+    <h2>Tìm đường về nhà</h2>
+  </div>
+
+  <div id="page">
+    
+
+    <div id="Message-Container">
+      <div id="message">
+        <h1>Congratulations!</h1>
+        <p id="moves"></p>
+        <button class="next">Tiếp tục</button>
+        <!-- <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" /> -->
+      </div>
+    </div>
+
+    <br>
+    
+    <div class="diff">
+      <h2>Chế độ:</h2>
+      <span id="diff">Easy</span>
+    </div>
+
+    <div id="view">
+      <div id="mazeContainer">
+        <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+      </div>
+    </div>
+
+
+    <div class="continue-container">
+      <div class="continue">
+          <div>
+              <h2>Quá trời quá đất cái trò này</h2>
+              <h3>Take this: capybara</h3>
+              <button>
+                  <a href="menu.html">Trở về menu</a>
+              </button>
+              <button>
+                  <a href="geoguessr.html">Next Challenge</a>
+              </button>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+  
+  <script src="script/maze.js"></script>
+</body>
+</html>

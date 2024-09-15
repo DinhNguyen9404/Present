@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Images/ScreenShot00013.png);
+    background-attachment: fixed;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.intro{
+    width: 50%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(208, 76, 36), 50%, rgb(67, 206, 199));
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: rgb(5, 19, 2);
+    text-align: start;
+}
+
+.intro h1{
+    font-style: italic;
+    color: rgb(224, 186, 36);
+}
+
+.board{
+    width: 960px;
+    height: 600px;
+    margin: auto;
+    border: .5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board img{
+    width: 160px;
+    height: 100px;
+    border: .2px solid white;
+    box-sizing: border-box;
+}
+
+.pieces{
+    width: 1280px;
+    height: 500px;
+    border: 1px solid white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pieces img{
+    width: 160px;
+    height: 100px;
+    border: .2px solid white;
+    box-sizing: border-box;
+}
+
+/* Continue */
+.continue-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(135, 32, 32), cyan);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: aqua;
+}
+
+.continue h3{
+    color: rgb(90, 19, 125);
+}
+
+.continue div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.continue button:hover{
+    background-color: rgb(43, 233, 122);
+}
+
+@media screen and (max-width: 1300px) {
+    body *{
+        display: none;
+    }
+
+}

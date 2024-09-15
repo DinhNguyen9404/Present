@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Images/img2.jpg);
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.intro{
+    width: 70%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(177, 102, 41), 60%, rgb(46, 188, 176));
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: #ffd700;
+}
+
+.intro h1{
+    font-style: italic;
+    color: rgb(212, 219, 217);
+    font-size: 2.4rem;
+}
+
+.intro h2{
+    font-size: 1.5rem;
+}
+
+/* Game */
+.game-board{
+    position: relative;
+    margin: 10px auto;
+    width: 636px;
+    height: 636px;
+    border: 3px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.box{
+    position: absolute;
+    height: 116px;
+    width: 116px;
+    top: 10px;
+    left: 10px;
+    border-radius: 12px;
+    line-height: 60px;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin 0.15s linear, background 0.05s linear, transform 0.05s linear;
+    transform-origin: center;
+}
+
+
+
+
+/* Continue */
+.continue-container, .failed-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue, .failed{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div, .failed div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to right, red, cyan);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.continue h3{
+    color: rgb(37, 39, 192);
+}
+
+.failed div{
+    background-color: rgb(208, 46, 46);
+}
+
+.continue div button, .failed div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.continue div button:hover{
+    color: white;
+    background: green;
+}
+
+.restart:hover{
+    color: white;
+    background-color: red;
+}
+
+@media screen and (max-width: 1400px) {
+    body *{
+        display: none;
+    }
+}

@@ -1,0 +1,202 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Images/ScreenShot00002.png);
+    background-attachment: fixed;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.intro{
+    width: 50%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, lightblue, rgb(11, 86, 87));
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(35, 44, 107);
+}
+
+.intro h1{
+    font-style: italic;
+    color: rgb(217, 61, 61);
+}
+
+.setting{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid blue;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.setting button{
+    padding: 10px;
+    width: 100px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(37, 174, 174);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrapper{
+    padding: 20px;
+    width: 55%;
+    height: 90vh;
+    margin: auto;
+    backdrop-filter: blur(20px);
+}
+
+.cards{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    position: relative;
+    width: 140px;
+    height: 210px;
+    cursor: pointer;
+    perspective: 600px;
+    transform-style: preserve-3d;  
+}
+
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-15px);
+    }
+    40%{
+        transform: translateX(15px);
+    }
+    60%{
+        transform: translateX(-15px);
+    }
+    80%{
+        transform: translateX(15px);
+    }
+}
+
+.card .view{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    backface-visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+
+.view img{
+    width: 100%;
+    height: 100%;
+}
+
+.back-view{
+    transform: rotateY(-180deg);
+}
+
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+
+.continue-container, .failed-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue, .failed{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div, .failed div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.continue h3{
+    color: red;
+}
+
+.failed div{
+    background-color: rgb(208, 46, 46);
+}
+
+.continue div button, .failed div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.continue div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.continue button:hover{
+    background-color: rgb(220, 233, 43);
+}
+
+@media screen and (max-width: 1300px) {
+    body *{
+        display: none;
+    }
+
+}
+
+

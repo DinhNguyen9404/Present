@@ -1,0 +1,48 @@
+body{
+    background: url(../Images/Congratulations.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+
+.container{
+    width: 70%;
+    height: 60%;
+    margin: auto;
+    margin-top: 180px;
+    text-align: center;
+    backdrop-filter: blur(1px);
+}
+
+.container img{
+    width: 500px;
+    height: 300px;
+}
+
+.secret{
+    margin-top: 200px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.secret img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.secret span{
+    display: none;
+}
+
+span.active{
+    display: inline;
+}

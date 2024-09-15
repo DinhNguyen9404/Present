@@ -1,0 +1,207 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Images/ScreenShot00008.png);
+    background-attachment: fixed;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.intro{
+    width: 40%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(42, 36, 208), 30%, rgb(188, 46, 86));
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: rgb(145, 191, 134);
+}
+
+.intro h1{
+    font-style: italic;
+    color: rgb(224, 149, 36);
+}
+
+
+.quiz-container{
+    padding: 20px;
+    width: 50%;
+    height: 45%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.quiz{
+    width: 100%;
+    height: 100%;
+}
+
+.quiz .question{
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(75, 66, 66);
+    color: rgb(16, 31, 2);
+}
+
+.answer{
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.answer input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.answer .review{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: rgb(48, 44, 169);
+}
+
+.input:focus{
+    border: none;
+    outline: none;
+}
+
+
+.answer button{
+    width: 140px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.submit:hover{
+    color: white;
+    background-color: rgb(46, 147, 180);
+}
+
+.result{
+    position: fixed;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.result .score{
+    color: rgb(195, 38, 38);
+    font-weight: 400;
+    font-size: 2rem;
+    width: 90px;
+    border: 1px solid white;
+    text-align: center;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(216, 216, 43);
+}
+
+.result button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    display: none;
+}
+
+.next:hover{
+    background-color: green;
+    color: white;
+}
+
+
+/* Continue */
+.continue-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 127, 253);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.continue h3{
+    color: rgb(32, 30, 135);
+}
+
+.continue div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.continue button:hover{
+    background-color: rgb(220, 233, 43);
+}
+
+@media screen and (max-width: 1300px) {
+    body *{
+        display: none;
+    }
+
+}

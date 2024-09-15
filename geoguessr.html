@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/geoguessr.css">
+    <title>Chapter 8: GeoGuessr</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Chapter 8: GeoGuessr</h1>
+        <h2>Dựa vào hình ảnh, đoán xem nơi đó thuộc quốc gia nào</h2>
+        <h2>Lưu ý: điền đáp án bằng tiếng Anh, chú ý in hoa in thường</h2>
+    </div>
+    <!-- <h2>AIzaSyDhAb-_r3NZLEIuFCSt8Gy8KeZIabg6abM</h2> -->
+
+    <div id="street-view">
+    </div>
+    <div class="block">
+    </div>
+
+    <div class="answer">
+        <h2 class="question">Đây là quốc gia nào?</h2>
+        <input type="text" class="input" placeholder="Nhập đáp án">
+        <button class="submit">Xác nhận</button>
+        <div class="result">
+            <div class="review"></div>    
+            <div class="score">0/7</div>
+        </div>
+        <button class="next">Tiếp tục</button>
+    </div>
+    
+
+    <div class="continue-container">
+        <div class="continue">
+            <div>
+                <h2>Toi đã suýt tốn tiền để lấy cái api google map</h2>
+                <h3>Nên key sẽ là một đoạn api: AIzaSyDhAb-_r3NZLE</h3>
+                <button>
+                    <a href="menu.html">Trở về menu</a>
+                </button>
+                <button>
+                    <a href="candycrush.html">Còn gì nữa không?</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAb-_r3NZLEIuFCSt8Gy8KeZIabg6abM&callback=initialize&v=weekly"
+      defer
+    ></script>
+    <script src="script/geoguessr.js"></script>
+</body>
+</html>

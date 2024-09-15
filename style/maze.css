@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/Images/img1.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .intro{
+    width: 70%;
+    padding: 10px;
+    padding-left: 30px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, rgb(14, 105, 21), 70%, rgb(179, 96, 28));
+    margin-bottom: 70px;
+    margin-left: 20px;
+    color: #150c81;
+    text-align: start;
+  }
+  
+  .intro h1{
+    font-style: italic;
+    color: rgb(1, 35, 21);
+    font-size: 2.4rem;
+  }
+  
+  .intro h2{
+    font-size: 1.5rem;
+  }
+
+
+/* GAME  */
+.page{
+    z-index: 10;
+}
+
+#view {
+    margin-top: 200px;
+    width: 700px;
+}
+
+#mazeContainer {
+    top: 15px;
+    opacity: 0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+#mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px black;
+    height: 720px;
+}
+
+
+#Message-Container {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+
+
+#Message-Container #message {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    font-size: 1.5rem;
+}
+
+.next{
+    padding: 20px;
+    width: 140px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.next:hover{
+    background-color: green;
+    color: white; 
+}
+
+#page {
+	text-align: center;
+	height: auto;
+	width: auto;
+	margin: auto;
+}
+#page #menu {
+    z-index: 100;
+    color: red;
+    margin: auto;
+    padding: 10px;
+    height: 65px;
+    box-sizing: border-box;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+#page #view {
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.border {
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
+#instructions {
+    margin-top: 425px;
+}
+
+
+
+
+.diff{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 30%;
+    left: 5%;
+    border: 1px solid blue;
+    background: linear-gradient(to right, lightblue, rgb(11, 0, 128));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#diff{
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+}
+ 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+	input, select {
+	    width: 120px;
+	}
+}
+
+
+
+  /* Continue */
+  .continue-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.continue{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.continue div{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.continue h3{
+    color: red;
+}
+
+.continue div button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.continue button:hover{
+    background-color: rgb(220, 233, 43);
+}
+
+@media screen and (max-width: 1300px) {
+    body *{
+        display: none;
+    }
+
+}
+
