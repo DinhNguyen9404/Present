@@ -11,7 +11,7 @@ window.onload = function(){
     for(let i = 0; i<rows; i++){
         for(let j = 0; j < cols; j++){
             let tile = document.createElement("img");
-            tile.src = `../Images/Puzzle/blank.png`;
+            tile.src = `./Images/Puzzle/blank.png`;
             //Drag and drop functionality
             tile.addEventListener("dragstart", dragStart); //click on image to drag
             tile.addEventListener("dragover", dragOver); //drag an image
@@ -42,7 +42,7 @@ window.onload = function(){
 
     for(let i = 0; i < pieces.length; i++){
         let tile = document.createElement('img');
-        tile.src = "../Images/Puzzle/" + pieces[i] + ".png";
+        tile.src = "./Images/Puzzle/" + pieces[i] + ".png";
 
         //Drag and drop functionality
         tile.addEventListener("dragstart", dragStart); //click on image to drag
