@@ -93,7 +93,7 @@ function shuffleCard(){
     cards.forEach((card, index) =>{
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
-        imgTag.src = `../Images/MemoryCard/${arr[index]}.webp`;
+        imgTag.src = `./Images/MemoryCard/${arr[index]}.webp`;
         card.addEventListener("click", flipCard);
     })
 }
