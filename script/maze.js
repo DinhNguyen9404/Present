@@ -533,7 +533,7 @@ function rand(max) {
     };
     sprite = new Image();
     sprite.src =
-      "../Images/Maze/capybara.png" +
+      "./Images/Maze/capybara.png" +
       "?" +
       new Date().getTime();
     sprite.setAttribute("crossOrigin", " ");
@@ -545,7 +545,7 @@ function rand(max) {
     };
   
     finishSprite = new Image();
-    finishSprite.src = "../Images/Maze/home.png"+
+    finishSprite.src = "./Images/Maze/home.png"+
     "?" +
     new Date().getTime();
     finishSprite.setAttribute("crossOrigin", " ");
