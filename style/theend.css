@@ -133,6 +133,7 @@ body.active > div:not(.end){
     height: 100vh;
     position: relative;
     display: none;
+    padding: 0;
     margin: 0;
 }
 
